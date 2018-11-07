@@ -1,0 +1,293 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background:#F7F7F7;
+	font-size:100%;
+	font-family:Tahoma,Arial,sans-serif;
+}
+
+/*Header Design Begins*/
+
+header {
+	width:100%;
+	background:white;
+	border-bottom:20px solid #CE726B;
+	position:fixed;
+	margin:-60px 0 0 0;
+	opacity:0.9;
+}
+
+header::after{
+	content:" ";
+	clear:both;
+	display:block;
+}
+
+#nav-bar {
+	width:90%;
+	margin:0 auto;
+}
+
+#logo {
+	float:left;
+	margin:10px 0 10px 0;
+}
+
+#logo:hover {
+	transform:rotate(360deg);
+	transition:transform 4s;
+
+}
+
+
+#mobile-menu {
+	float:right;
+	margin:35px 0 0 0;
+	
+}
+
+.dropdown {
+	color:white;
+	font-size:3em;
+	padding:10px;
+	border:0;
+	background:linear-gradient(to top, #CE726B, grey);
+	padding:20px;
+	border-radius:20px;
+	font-weight:bolder;
+
+}
+
+#menu {
+	position:relative;
+
+}
+
+nav ul li{
+list-style-type:none;
+font-size:4em;
+margin:30px 0 30px 0;
+width:100%;
+}
+
+nav ul li a{
+text-decoration:none;
+font-weight:bolder;
+color:white;
+
+}
+
+nav{
+	float:right;
+	display:none;
+	position:absolute;
+	background:#CE726B;
+	width:50%;
+	right:0;
+	top:130px;
+	text-align:center;
+	list-style-type:none;
+	border-radius:30px;
+}
+
+#menu:hover nav{
+	display:block;
+	
+}
+
+a:hover {
+	
+}
+
+/*Header Design Finished*/
+
+
+
+/*Main Content Design Begins*/
+#main-container {
+	width:100%;
+	text-align:center;
+}
+
+#showcase {
+	margin-top:50px;
+	background:url("image/paintinghouse.png");
+	height:700px;
+	background-size:cover;
+	text-align:center;
+	color:#CE726B;
+}
+
+div#showcase h1{
+	padding:200px 0 0 0;
+	font-size:8em;
+	font-weight:bold;
+	text-shadow:5px 5px 10px #BE00FF;
+}
+
+div#showcase h1:hover {
+	transform:rotateX(360deg);
+	transition:transform 4s;
+	color:#BE00FF;
+	text-shadow:5px 5px 10px #CE726B;
+}
+
+
+#showcase p{
+	font-size:3em;
+	color:#65ADBC;
+	font-weight:bolder;
+}
+
+#service {
+	color:black;
+	margin:100px auto 0 auto;
+	text-align:center;
+	width:60%;
+	font-size:2em;
+}
+
+#span {
+	display:block;
+	background:#A686A3;
+	width:40%;
+	margin:50px auto 100px auto;
+	height:10px;
+	text-align:center;
+	transform:skewX(92deg);
+	margin-top:-5px;
+}
+
+
+.paints {
+	font-size:3em;
+	max-width:40%;
+	width:40%;
+	margin-left:5%;
+	margin-right:5%;
+	margin:10px 5% 100px 5%;
+	text-align:center;
+	background:white;
+	border-radius:20px;
+	box-shadow:5px 5px 15px grey;
+	float:left;
+	overflow:auto;
+}
+
+@keyframes flip {
+	0% {
+		background:white;
+		left:0;
+		width:30%;
+		top:200px;
+	}
+	
+	10% {
+		background:green;
+		width:50%;
+		top:250px;
+	}
+	
+	20% {
+	background:blue;
+	width:60%;
+	top:200px;
+	}
+	
+	50% {
+	background:yellow;
+	width:70%;
+	top:250px;
+	}
+	
+	70% {
+	background:grey;
+	width:75%;
+	top:200px;
+	}
+	
+	80% {
+	background:green;
+	width:80%;
+	top:250px;
+	}
+	
+	100% {
+	background:green;
+	width:85%;
+	top:200px;
+	}
+
+}
+
+.paints {
+	animation-name:flip;
+	animation-duration:15s;
+
+}
+
+.paints:nth-child(2n) {
+	background:#A686A3;
+}
+
+.paints img{
+	width:80%;
+	height:350px;
+	border-radius:50%;
+	text-align:center;
+	margin:20px 0 10px 10px;
+	border-bottom:30px dotted grey;
+}
+
+.paints img:hover {
+	border:0px solid blue;
+	transform:rotate(360deg);
+	transition:border 5s, transform 5s;
+}
+
+.paints figcaption {
+	padding:10px 0 20px 0;
+	font-size:1em;
+
+}
+
+/*---Body Design Finished*/
+
+
+/*---Footer Design Begins*/
+footer {
+	clear:both;
+	background:#CE726B;
+	font-size:3em;
+	font-weight:bold;
+	text-align:center;
+
+}
+
+footer:after {
+	content:" ";
+	clear:both;
+	display:block;
+
+}
+
+.one-third {
+	float:left;
+	width:90%;
+	margin:50px 5% 50px 5%;
+
+}
+
+.one-third p, .one-third ul{
+	color:white;
+
+}
+
+.one-third ul li {
+	list-style-type:none;
+	padding:10px;
+
+}
